@@ -1,0 +1,6 @@
+This folder contains Energia code for a TI Stellaris or Tiva LaunchPad microcontroller development board.  
+The program works with Energia version 0101E0010, but not the newer 0101E0011.  There are bugs associated with the later version that prevent pwm outputs from certain pins used by the WheeStat.  The next version of Energia is supposed to have this bug fixed.
+
+****** FILE LOCATIONS *****
+Except for the altSPI file, all files must be in a sub-folder named WheeStat5_0 in your sketchbook folder.  To determine the location of your sketchbook folder, open Energia, click on file, then preferences.  The window that opens will tell you where the sketchbook is located.
+The altSPI file is a library for SPI communication with the digital potentiometer.  Earlier versions of the WheeStat required that you modify the SPI library that comes with Energia.  Using the altSPI library gets arround this issue and prevents you from having to re-download the file every time you update the version of Energia you use. The altSPI folder needs to be in a sub-folder named "libraries" inside your sketchbook folder.
